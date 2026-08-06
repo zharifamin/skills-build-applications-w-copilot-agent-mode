@@ -5,6 +5,7 @@ import { Activity, LeaderboardEntry, Team, User, Workout } from './models/index.
 
 const app = express();
 const port = Number(process.env.PORT || 8000);
+// Use a Codespaces URL when available and fall back to localhost otherwise.
 const codespaceName = process.env.CODESPACE_NAME;
 const baseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
