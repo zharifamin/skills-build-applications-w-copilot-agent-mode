@@ -9,7 +9,7 @@ const getBaseUrl = () => {
 
 export const buildApiUrl = (resource) => {
   const baseUrl = getBaseUrl();
-  return `${baseUrl}/api/${resource}`;
+  return `${baseUrl}/api/${resource}/`;
 };
 
 export async function fetchApiData(resource) {
